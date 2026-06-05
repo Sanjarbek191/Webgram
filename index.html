@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webgram - AI Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="webgram-container">
+        <!-- Sidebar - Chat List -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="app-logo">🤖 Webgram</h1>
+                <button class="new-chat-btn" onclick="createNewChat()">
+                    <span>➕</span> Yangi chat
+                </button>
+            </div>
+            
+            <div class="chats-list" id="chatsList">
+                <!-- Chat items will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Main Chat Window -->
+        <div class="chat-window">
+            <div class="chat-header" id="chatHeader">
+                <h2>Suhbatni tanlang</h2>
+            </div>
+
+            <div class="messages-container" id="messagesContainer">
+                <div class="welcome-message">
+                    <h2>🤖 Webgram'ga xush kelibsiz!</h2>
+                    <p>Yangi chat yaratish uchun "Yangi chat" tugmasini bosing</p>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <form id="messageForm" onsubmit="sendMessage(event)">
+                    <input 
+                        type="text" 
+                        id="messageInput" 
+                        placeholder="Xabaringizni yozing..." 
+                        autocomplete="off"
+                        disabled
+                    >
+                    <button type="submit" id="sendBtn" disabled>
+                        <span>📤 Jo'natish</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
