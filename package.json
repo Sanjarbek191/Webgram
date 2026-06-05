@@ -1,7 +1,7 @@
 {
   "name": "webgram",
   "version": "1.0.0",
-  "description": "Telegram-like chat application with AI responses",
+  "description": "Telegram-like chat application with free AI responses",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -9,14 +9,14 @@
     "client": "cd client && npm start",
     "install-all": "npm install && cd client && npm install"
   },
-  "keywords": ["chat", "telegram", "ai", "gemini"],
+  "keywords": ["chat", "telegram", "ai", "free", "huggingface"],
   "author": "Sanjarbek191",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
-    "@google/generative-ai": "^0.1.1"
+    "axios": "^1.4.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
